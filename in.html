@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 class="changeline">Hello worfld</h1>
+    <button class="change">ChangeText</button>
+
+<script>
+    const h1=document.querySelector('.changeline')
+    h1.textContent="bye world"
+    console.log(h1)
+      const button=document.getElementsByTagName('button');
+button.textContent="ChangeText"
+console.log(button)
+
+addEventListener('click',()=>{
+    h1.textContent="text changed"
+}) -->
+ 
+<body>
+    <input type="text" class="type"id="inputValue">
+    <button class="change">Change2upp</button>
+    <button class="rechange">Change2low</button>
+    <button class="length">Text length</button>
+    <button class="clear"id="clearbutton">Clear</button>
+    <div>
+    <button class="next">next</button>
+    <button class="previous">previous</button>
+</div>
+    <script>
+        const inputField = document.querySelector('.type');
+        const changebutton = document.querySelector('.change')
+        const rechangebutton = document.querySelector('.rechange')
+        const lengthbutton=document.querySelector('.length')
+        const clearbutton=document.getElementById('clearbutton')
+        const nextbutton=document.querySelector('.next')
+        const previousbutton=document.querySelector('.previous')
+        changebutton.addEventListener('click', () => {
+            const inputValue = inputField.value.toUpperCase();
+            
+            inputField.value = inputValue;
+        });
+        rechangebutton.addEventListener('click', () => {
+            const inputValue = inputField.value.toLowerCase();
+            
+            inputField.value = inputValue;
+        });
+        lengthbutton.addEventListener('click',() =>{
+            const inputValueLength=inputField.value.length
+            inputField.value = inputValueLength;
+        })
+        clearbutton.addEventListener('click',() =>{
+            document.getElementById('inputValue').value=''
+        })
+        nextbutton.addEventListener('click',() =>{
+            window.location.href="menu.html"
+           
+        })
+        previousbutton.addEventListener('click',() =>{
+            window.location.href="in.html"
+        })
+    </script>
+</body>
+
+</script>
+</html>
